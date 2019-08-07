@@ -46,6 +46,13 @@ bin/kafka-topics.sh --list --zookeeper localhost:2181
 
 testTopic
 ```
+Xóa topic 
+```
+bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic topic_name
+
+Topic Hello-kafka marked for deletion
+```
+
 ### Bước 5  : Gửi tin nhắn tới Kafka
 the "producer" là một quá trình chịu trách nhiệm đưa dữ liệu vào kafka. Kafka đi kèm với dòng lệnh máy khách sẽ lấy đầu vào tiêu chuẩn và gửi nó dưới dạng tin nhắn đến cụm kafka. Mặc định kafka gửi mỗi dòng là một tin nhắn riêng  
 Tiếp tục the Producer nhập một vài tin nhắn vào console để gửi đến server
